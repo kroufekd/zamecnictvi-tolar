@@ -28,7 +28,7 @@
     </div>
     </div>
     <div class="footer-copyright">
-        <p>© 2022 Martin Tolar</p>
+        <p><a href="admin.php">©</a> 2022 Martin Tolar</p>
     </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

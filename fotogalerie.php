@@ -18,12 +18,20 @@
         </div>
         <div class="container">
             <div class="row flex-box flex-wrap-wrap">
-                <div class="col-sm-4 flex-box flex-justify-center flex-align-center"><a class="fancybox" rel="gallery1" title="" href="assets/img/hero-background-nature.jpg"><img class="img-fluid" src="assets/img/hero-background-nature.jpg" /></a></div>
-                <div class="col-sm-4 flex-box flex-justify-center flex-align-center"><a class="fancybox" rel="gallery1" title="" href="assets/img/hero-background-technology.jpg"><img class="img-fluid" src="assets/img/hero-background-technology.jpg" /></a></div>
-                <div class="col-sm-4 flex-box flex-justify-center flex-align-center"><a class="fancybox" rel="gallery1" title="" href="assets/img/hero-background-travel.jpg"><img class="img-fluid" src="assets/img/hero-background-travel.jpg" /></a></div>
-                <div class="col-sm-4 flex-box flex-justify-center flex-align-center"><a class="fancybox" rel="gallery1" title="" href="assets/img/hero-background-food.jpg"><img class="img-fluid" src="assets/img/hero-background-food.jpg" /></a></div>
-                <div class="col-sm-4 flex-box flex-justify-center flex-align-center"><a class="fancybox" rel="gallery1" title="" href="assets/img/hero-background-music.jpg"><img class="img-fluid" src="assets/img/hero-background-music.jpg" /></a></div>
-                <div class="col-sm-4 flex-box flex-justify-center flex-align-center"><a class="fancybox" rel="gallery1" title="" href="assets/img/hero-background-photography.jpg"><img class="img-fluid" src="assets/img/hero-background-photography.jpg" /></a></div>
+              <?php 
+                    $dirname = "assets/img/gallery/";
+                    $images = glob($dirname."*.jpg");
+                    
+                    foreach($images as $image) {
+                        echo '<div class="col-sm-4 flex-box flex-justify-center flex-align-center"><a class="fancybox" rel="gallery1" title="" href="'.$image.'"><img class="img-fluid" src="'.$image.'" /></a></div>';
+                    }
+                    $dirname1 = "assets/img/gallery/";
+                    $images1 = glob($dirname1."*.JPG");
+                    
+                    foreach($images1 as $image1) {
+                        echo '<div class="col-sm-4 flex-box flex-justify-center flex-align-center"><a class="fancybox" rel="gallery1" title="" href="'.$image1.'"><img class="img-fluid" src="'.$image1.'" /></a></div>';
+                    }
+            ?>
             </div>
         </div>
     </section>
