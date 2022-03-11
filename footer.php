@@ -39,5 +39,7 @@
 <script src="assets/js/Basic-fancyBox-Gallery.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="assets/js/script.js"></script>
-<script src="assets/js/theme.js"></script>';
+<script src="assets/js/theme.js"></script>
+
+';
 ?>

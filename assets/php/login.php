@@ -2,7 +2,7 @@
     session_start();
     include 'db.php';
 
-    $password_input_hashed = password_hash($_POST["password"], PASSWORD_DEFAULT);
+    //$password_input_hashed = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
 
     $sql = 'SELECT * FROM users WHERE email="' . $_POST["email"] . '"';
@@ -13,12 +13,12 @@
 
         if(password_verify($_POST["password"], $row["password"])){
             $_SESSION["id_user"] = $row["id_user"];
-            header("Location: http://localhost/zamecnictvi%20tolar/fotogalerie.php");
+            header("Location: http://localhost/zamecnictvi-tolar/fotogalerie.php");
         } else {
-            header("Location: http://localhost/zamecnictvi%20tolar/admin.php?error=badpassword");
+            header("Location: http://localhost/zamecnictvi-tolar/admin.php?error=badpassword");
         }
     } else{
-        header("Location: http://localhost/zamecnictvi%20tolar/admin.php?error=bademail");
+        header("Location: http://localhost/zamecnictvi-tolar/admin.php?error=bademail");
     }
 
     

@@ -3,3 +3,6 @@
     width:25%;
     margin-bottom: 25px;
 }
+#photo-add-btn{
+    cursor: pointer;
+}
