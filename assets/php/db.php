@@ -8,7 +8,7 @@ $password = "Terezin350";
 $db = "zamecnicdb_zamecnictvi_tolar";
 
 //localhost
-/*
+/*awd
 $servername = "localhost";
 $username = "root";
 $password = "";
