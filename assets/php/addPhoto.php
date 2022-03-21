@@ -35,10 +35,12 @@
 
     if(mysqli_num_rows($result) == 0 && $uploadOk == 1){
         move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
+        /*
         $conn->query(
             'INSERT INTO photos (name) VALUES ("'.basename( $_FILES["fileToUpload"]["name"]).'" )'
-        );
-        header("Location: http://localhost/zamecnictvi-tolar/fotogalerie.php");
+        );*/
+        echo "soubor nahrán";
+        //header("Location: http://zamecnictvitolar.cz/fotogalerie.php");
     } else {
         echo "Někde stala chyba, soubor nebyl nahrán.";
     }

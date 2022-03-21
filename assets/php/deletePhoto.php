@@ -3,5 +3,5 @@
 
     $sql = 'DELETE FROM photos WHERE id_photo = "'.$_GET["q"].'"';
     $result = $conn->query($sql);
-    header("Location: http://localhost/zamecnictvi-tolar/fotogalerie.php");
+    header("Location: http://zamecnictvitolar.cz/fotogalerie.php");
 ?>

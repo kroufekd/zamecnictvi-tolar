@@ -2,20 +2,21 @@
 
 //server
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-
+$servername = "uvdb62.active24.cz";
+$username = "zamecnicdb_zamec";
+$password = "Terezin350";
+$db = "zamecnicdb_zamecnictvi_tolar";
 
 //localhost
 /*
-$servername = "127.0.0.1";
+$servername = "localhost";
 $username = "root";
 $password = "";
+$db = "db_zamecnictvi_tolar";
 */
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, "db_zamecnictvi_tolar");
+$conn = new mysqli($servername, $username, $password, $db);
 
 // Check connection
 if ($conn->connect_error) {

@@ -13,12 +13,12 @@
 
         if(password_verify($_POST["password"], $row["password"])){
             $_SESSION["id_user"] = $row["id_user"];
-            header("Location: http://localhost/zamecnictvi-tolar/fotogalerie.php");
+            header("Location: http://zamecnictvitolar.cz/fotogalerie.php");
         } else {
-            header("Location: http://localhost/zamecnictvi-tolar/admin.php?error=badpassword");
+            header("Location: http://zamecnictvitolar.cz/admin.php?error=badpassword");
         }
     } else{
-        header("Location: http://localhost/zamecnictvi-tolar/admin.php?error=bademail");
+        header("Location: http://zamecnictvitolar.cz/admin.php?error=bademail");
     }
 
     
