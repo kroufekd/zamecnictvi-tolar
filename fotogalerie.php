@@ -41,6 +41,7 @@
             
             <div class="row flex-box flex-wrap-wrap">
               <?php 
+              /*
                     $sql = 'SELECT name, id_photo FROM photos ORDER BY upload_date desc';
                     $result = $conn->query($sql);
 
@@ -53,7 +54,13 @@
                             }
                         }
                     }
-                    
+                */
+                $dirname = "assets/img/gallery/";
+                $images = glob($dirname."*.jpg");
+
+                foreach($images as $image) {
+                    echo '<div class="col-sm-4 flex-box flex-justify-center flex-align-center"><a class="fancybox" rel="gallery1" title="" href="'.$image.'"><img class="img-fluid" src="'.$image.'"/></a></div>';
+                }    
                     
             ?>
             </div>

@@ -9,7 +9,7 @@
                 <li class="nav-item" role="presentation"><a class="nav-link" href="sortiment.php">SORTiment</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="fotogalerie.php">fotogalerie</a></li>
                 <li class="nav-item" role="presentation"></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" style="font-size: 12px;color: rgb(0,0,0);filter: blur(0px) brightness(200%) saturate(200%);">+420 793 658 486</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" style="font-size: 12px;color: rgb(0,0,0);filter: blur(0px) brightness(200%) saturate(200%);">+420 604 702 849</a></li>
             </ul>
     </div>
     </div>
